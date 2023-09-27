@@ -9,7 +9,9 @@ const allowDrop = (e) => {
 // be called when a draggable object exits a valid dropzone 
 // so the green background is removed.
 const stopDrop = (e) => {
-  // write code here that will make the background return to normal when the dragged objects leaves a dropzone.
+  e.preventDefault();
+  
+  document.getElementById(e.target.id).classList.remove("hovering");
 }
 
 function drag(e) {
