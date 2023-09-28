@@ -10,13 +10,16 @@
   <title>101 DnD Demo</title>
 </head>
 <body>
-  <!-- TODO 1 -->
-  <!-- Use one the of the DnD event listener attributes to trigger a function that will change the background once a draggable element leaves a dropzone. -->
-  <!-- TODO 2 - SEE main.js -->
-  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="stopDrop(event)" >
-    <i class="fas fa-peace fa-5x peace" draggable="true" ondragstart="drag(event)" id="drag1"></i>
+  <div class="heading">
+    <h1>Responsive Boxes</h1>
   </div>
-  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="stopDrop(event)" ></div>
+  <div class="work">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="stopDrop(event)" >
+      <i class="fas fa-peace fa-5x peace" draggable="true" ondragstart="drag(event)" id="drag1"></i>
+    </div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="stopDrop(event)" ></div>
+  </div>
+    
   <!-- TODO 3 -->
   <!-- Use another DnD event to change the border of the targeted dropzone when a draggable element enter it. -->
   <!-- TODO 4 -->
